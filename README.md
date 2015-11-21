@@ -22,8 +22,7 @@
 - [jQuery](https://jquery.com/) ([CDN](http://code.jquery.com/)を利用)
 - [Font Awesome](https://fortawesome.github.io/Font-Awesome/) ([CDN](https://fortawesome.github.io/Font-Awesome/get-started/)を利用)
 - [bxSlider](http://bxslider.com/) ([CDN](http://www.jsdelivr.com/projects/bxslider)を利用)
-- [CSS Reset (YUI Library)](http://yuilibrary.com/yui/docs/cssreset/) (CDNを利用)
-- Perl: メールフォームCGIで利用
+- [meyer-reset](http://meyerweb.com/eric/tools/css/reset/) ([CDN](http://www.jsdelivr.com/projects/meyer-reset)を利用)
 
 ## 著者
 - Name: Yuusaku Miyazaki (宮崎 雄策)
