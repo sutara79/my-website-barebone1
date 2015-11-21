@@ -1,0 +1,17 @@
+################################
+# Gitの管理対象から除外する
+################################
+
+# キャッシュファイル等
+.AppleDouble/
+Thumbs.db
+*.DS_Store
+
+# Fireworksのファイル
+*.mno
+
+# メールフォーム
+count.dat
+
+# RSS (SimplePie)
+cache/
