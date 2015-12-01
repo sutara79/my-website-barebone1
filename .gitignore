@@ -10,8 +10,5 @@ Thumbs.db
 # Fireworksのファイル
 *.mno
 
-# メールフォーム
-count.dat
-
 # RSS (SimplePie)
 cache/

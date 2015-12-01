@@ -28,7 +28,7 @@ $conf{'sendmail'} = '/usr/sbin/sendmail';
 $conf{'mailto'} = 'toumin.m7@gmail.com';
 
 #07.送信完了時にリダイレクトするサンクスページ
-$conf{'thanks'} = '../thanks.html';
+$conf{'thanks'} = '../../thanks.html';
 
 #08.設置者に届くメールの件名
 $conf{'subject'} = 'お問い合せフォームから';
