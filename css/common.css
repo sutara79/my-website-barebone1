@@ -67,6 +67,15 @@ p {
   margin-bottom: 12px;
   padding-bottom: 8px;
 }
+.subheading {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-top: 2em;
+}
+.caption-img {
+  font-size: 0.8em;
+}
+
 .dl-oneline > dt,
 .dl-oneline > dd {
   float: left;
@@ -124,7 +133,7 @@ header {
     display: block;
     float: left;
     position: relative;
-    width: 25%;
+    width: 20%;
   }
   .globalnavi > ul > li > a {
     color: inherit;
@@ -326,11 +335,11 @@ footer {
 }
 .contact-info > dt {
   margin-bottom: 12px;
-  width: 70px;
+  width: 140px;
 }
 .contact-info > dd {
   margin-bottom: 12px;
-  width: calc(100% - 70px);
+  width: calc(100% - 140px);
 }
 .phone-link {
   color: inherit;
