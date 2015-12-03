@@ -47,11 +47,19 @@ a i {
   margin-left: 5px;
 }
 
+small {
+  font-size: 0.8em;
+  font-weight: normal;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 section {
   padding-bottom: 30px;
 }
 p {
   margin-bottom: 1em;
+  line-height: 1.4;
 }
 .page-title {
   border-bottom: #ccc 2px solid;
@@ -79,6 +87,59 @@ p {
 .dl-oneline > dt,
 .dl-oneline > dd {
   float: left;
+}
+
+/**
+ * 記事内の画像
+ */
+.img-row-wrapper img,
+.img-single-wrapper img {
+  height: auto;
+  width: 100%;
+}
+/* 1列に1枚のみ */
+.img-640 {
+  max-width: 640px;
+}
+/* for PC */
+@media (min-width: 768px) {
+  .img-row-container {
+    overflow: hidden;
+  }
+  .img-row-wrapper {
+    float: left;
+  }
+  .img-single-wrapper {
+    margin: 0 auto 1em;
+  }
+  /* 1列に3枚 */
+  .img-300-wrapper {
+    margin-left: -3.125%;
+  }
+  .img-300 {
+    margin-left: 3.03030303030303%;
+    width: 30.3030303030303%;
+  }
+  /* 1列に2枚 */
+  .img-450-wrapper {
+    margin-left: -6.25%;
+  }
+  .img-450 {
+    margin-left: 5.882352941176471%;
+    width: 44.11764705882353%;
+  }
+}
+/* for Mobile */
+@media (max-width: 767px) {
+  .img-row-wrapper {
+    margin: 1em auto;
+  }
+  .img-300 {
+    max-width: 300px;
+  }
+  .img-450 {
+    max-width: 450px;
+  }
 }
 
 /**
@@ -268,6 +329,34 @@ footer {
 }
 
 /**
+ * 概要説明用テーブル
+ */
+.table-profile,
+.table-profile th,
+.table-profile td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.table-profile th,
+.table-profile td {
+  padding: 10px;
+  text-align: left;
+  line-height: 1.4;
+}
+.table-profile {
+  margin-bottom: 30px;
+  width: calc(100% - 1px - 1px);
+}
+.table-profile th {
+  background: #f6f6f6;
+}
+th.table-profile-heading {
+  background: #fff;
+  font-weight: bold;
+}
+
+/**
  * jquery.bxslider (スライダー関連)
  */
 .bx-wrapper {
@@ -308,6 +397,30 @@ footer {
   display: inline-block;
   padding-right: 1em;
 }
+.top-link-tile li {
+  width: 50%;
+  float: left;
+  height: 160px;
+}
+.top-link-tile a {
+  display: block;
+  padding-top: 30px;
+  padding-left: 16px;
+  font-size: 24px;
+  background: #999;
+  color: #fff;
+  height: calc(100% - 30px);
+}
+.top-link-tile li:nth-child(3n) a {
+  background: #669;
+}
+.top-link-tile li:nth-child(3n+1) a {
+  background: #696;
+}
+.top-link-tile li:nth-child(3n+2) a {
+  background: #966;
+}
+
 /* for PC */
 @media (min-width: 768px) {
   .hero {
@@ -420,4 +533,60 @@ footer {
   .mfp-form li > div {
     margin-bottom: 1em;
   }
+}
+
+/**
+ * プライバシーポリシー
+ */
+.privacy-container dt {
+  font-weight: bold;
+  margin: 2em 0 0.5em;
+}
+
+.privacy-container dt,
+.privacy-container dd {
+  line-height: 1.4;
+}
+
+/**
+ * Googleマップ
+ * レスポンシブ対応
+ * 参考: http://inthecom.net/?p=718
+ */
+.gmap-container {
+  max-width: 640px;
+  margin: 1em auto;
+}
+.gmap-wrapper {
+  border: 1px solid #ccc;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 60%;
+  position: relative;
+}
+.gmap-wrapper iframe,
+.gmap-wrapper object,
+.gmap-wrapper embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/**
+ * 原稿作成用
+ * 注意: 本番では使用しないでください
+ */
+.draft-memo {
+  background: #fee;
+  border: 1px solid #900;
+  color: #900;
+  line-height: 1.4;
+  padding: 4px;
+  margin: 8px 0;
+}
+.draft-memo b {
+  color: red;
+  font-weight: bold;
 }
