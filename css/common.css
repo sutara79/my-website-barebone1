@@ -248,6 +248,7 @@ header {
   }
   /* トグルボタン */
   .toggle-menu {
+    transition-delay: 0s;
     background: inherit;
     color: #444;
     display: block;
