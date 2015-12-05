@@ -4,8 +4,11 @@
  * そのため、下記の関数は必要。
  */
 function globalNavi () {
-  if ($(window).width() > 767) $('.globalnavi').show(); // PC向け
-  else                         $('.globalnavi').hide(); // スマホ向け
+  if (window.innerWidth < 768) {
+    $('.globalnavi').hide(); // スマホ向け
+  } else {
+    $('.globalnavi').show(); // PC向け
+  }
 }
 /**
  * ページ読込み後に行う処理
@@ -25,7 +28,7 @@ $(function () {
    * for Mobile: ドロワーメニュー
    */
   $(document).on('click', function () {
-    if ($(window).width() < 768) {
+    if (window.innerWidth < 768) {
       $(this).toggleClass('toggle-menu-open');
       $('.toggle-menu').removeClass('toggle-menu-open');
       $('.globalnavi').slideUp('fast');
