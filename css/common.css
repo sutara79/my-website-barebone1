@@ -200,7 +200,7 @@ header {
     display: block;
     float: left;
     position: relative;
-    width: 20%;
+    width: 25%;
   }
   .globalnavi > ul > li > a {
     color: inherit;
@@ -226,7 +226,16 @@ header {
     position: fixed;
   }
   .site-title {
-    padding: 18px 6px;
+    padding: 6px 0 6px 6px;
+    width: calc(100% - 6px - 48px); /* 左余白、メニューボタンを差し引く */
+    max-width: 240px;
+    height: calc(60px - 6px - 6px);
+    line-height: 48px;
+  }
+  .site-title img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
   }
   .globalnavi {
     position: relative;
@@ -263,6 +272,8 @@ header {
     right: 0;
     text-decoration: none;
     top: 0;
+    width: 48px;
+    text-align: center;
   }
   .toggle-menu:hover,
   .toggle-menu-open:hover {
@@ -270,10 +281,10 @@ header {
   }
   .toggle-menu > .fa-bars {
     display: block;
-    font-size: 28px;
-    padding: 16px;
+    font-size: 22px;
+    padding: 19px 0;
     line-height: 1;
-    text-align: center;
+    margin-left: 0;
   }
 }
 /**
@@ -362,45 +373,6 @@ th.table-profile-heading {
   background: #fff;
   font-weight: bold;
 }
-
-/**
- * jquery.bxslider (スライダー関連)
- */
-.bx-wrapper {
-  border: 0; /* プラグインのデフォルトで表示される枠線を消す */
-  box-shadow: 0 0 5px #ccc;
-}
-/* 透明度を初期値に戻す */
-.bx-wrapper a:hover img {
-  filter: alpha(opacity = 100);
-  opacity: 1;
-}
-/* 矢印ボタンのz-indexを"9999"から初期値へ戻す */
-.bx-controls-direction a {
-  transition: 0s;
-  z-index: auto;
-}
-
-
-
-/* for PC */
-@media (min-width: 768px) {
-  .hero {
-    padding: 30px 0 1px;
-  }
-  .hero-inner {
-    margin: 0 auto;
-    max-width: 960px;
-  }
-}
-/* for Mobile */
-@media (max-width: 767px) {
-  .hero {
-    padding-top: 60px;
-    margin-bottom: -60px;
-  }
-}
-
 
 /**
  * プライバシーポリシー

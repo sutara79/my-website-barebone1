@@ -41,3 +41,42 @@
 .top-link-tile li:nth-child(3n+2) a {
   background: #966;
 }
+
+/**
+ * ヒーロー
+ */
+/* for PC */
+@media (min-width: 768px) {
+  .hero {
+    padding: 30px 0 1px;
+  }
+  .hero-inner {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+}
+/* for Mobile */
+@media (max-width: 767px) {
+  .hero {
+    padding-top: 60px;
+    margin-bottom: -60px;
+  }
+}
+
+/**
+ * jquery.bxslider (スライダー関連)
+ */
+.bx-wrapper {
+  border: 0; /* プラグインのデフォルトで表示される枠線を消す */
+  box-shadow: 0 0 5px #ccc;
+}
+/* 透明度を初期値に戻す */
+.bx-wrapper a:hover img {
+  filter: alpha(opacity = 100);
+  opacity: 1;
+}
+/* 矢印ボタンのz-indexを"9999"から初期値へ戻す */
+.bx-controls-direction a {
+  transition: 0s;
+  z-index: auto;
+}
