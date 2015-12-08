@@ -1,0 +1,43 @@
+/**
+ * index.html
+ */
+.hero {
+  background-color: #eee;
+}
+.news-headline {
+  clear: both;
+  margin-top: 3px;
+  padding-top: 10px;
+  width: 100%;
+}
+.news-headline > li {
+  line-height: 1.4;
+  margin-bottom: 0.4em;
+}
+.news-headline > li > time {
+  display: inline-block;
+  padding-right: 1em;
+}
+.top-link-tile li {
+  width: 50%;
+  float: left;
+  height: 160px;
+}
+.top-link-tile a {
+  display: block;
+  padding-top: 30px;
+  padding-left: 16px;
+  font-size: 24px;
+  background: #999;
+  color: #fff;
+  height: calc(100% - 30px);
+}
+.top-link-tile li:nth-child(3n) a {
+  background: #669;
+}
+.top-link-tile li:nth-child(3n+1) a {
+  background: #696;
+}
+.top-link-tile li:nth-child(3n+2) a {
+  background: #966;
+}

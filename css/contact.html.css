@@ -1,0 +1,95 @@
+/**
+ * contact.html
+ */
+.contact-info {
+  margin-top: 20px;
+  font-size: 1.4em;
+}
+.contact-info > dt {
+  margin-bottom: 12px;
+  width: 140px;
+}
+.contact-info > dd {
+  margin-bottom: 12px;
+  width: calc(100% - 140px);
+}
+.phone-link {
+  color: inherit;
+  cursor: default;
+}
+.phone-link:hover {
+  text-decoration: none;
+}
+.mfp-form .mfp_err {
+  margin: 2px 0 10px;
+}
+.mfp-item {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 2px 4px;
+  width: calc(100% - 2px - 8px);
+}
+.mfp-textarea {
+  height: 200px;
+}
+.mfp-submit {
+  background: #eee;
+  background-image: linear-gradient(#fff, #ccc);
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-shadow: 0 0 1px #666;
+}
+.mfp-submit:hover {
+  background: #cde;
+  background-image: linear-gradient(#def, #abc);
+}
+/* for PC */
+@media (min-width: 768px) {
+  .mfp-form {
+    width: 100%;
+  }
+  .mfp-form label {
+    float: left;
+    margin: 0;
+    padding: 3px 16px 3px 0;
+    position: relative;
+    text-align: right;
+    vertical-align: top;
+    width: calc(20% - 16px);
+  }
+  .submit-area {
+    margin-left: 20%;
+    margin-top: 12px;
+  }
+  .mfp-form li > div {
+    float: right;
+    vertical-align: top;
+    width: 80%;
+  }
+}
+/* for Mobile */
+@media (max-width: 767px) {
+  .mfp-form {
+    max-width: 100%;
+    width: 100%;
+  }
+  .mfp-form label {
+    display: block;
+    margin: 0 0 0.2em 0;
+    padding: 0;
+    width: 100%;
+  }
+  .mfp-form li > div {
+    margin-bottom: 1em;
+  }
+}
