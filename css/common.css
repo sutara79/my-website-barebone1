@@ -9,6 +9,7 @@ body {
   height: 100%; /* footerを下部に固定するために必要 */
   position: relative; /* footerを下部に固定するために必要 */
   font-family: Meiryo, "Hiragino Kaku Gothic Pro", Osaka, sans-serif;
+  word-wrap: break-word;
 }
 .wrap-for-fixedfooter { /* footerを下部に固定するための要素 */
   position: relative;

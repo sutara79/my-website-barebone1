@@ -39,6 +39,7 @@ $(function () {
     }
   });
   $('.toggle-menu').on('click', function (ev) {
+    ev.preventDefault();
     if ($('.globalnavi').is(':hidden')) {
       ev.stopPropagation();
       $('.globalnavi > *')
