@@ -76,7 +76,7 @@
   opacity: 1;
 }
 /* 矢印ボタンのz-indexを"9999"から初期値へ戻す */
-.bx-controls-direction a {
+.bx-wrapper .bx-controls-direction a {
   transition: 0s;
   z-index: auto;
 }

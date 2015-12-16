@@ -163,7 +163,6 @@ p {
  */
 header {
   background-color: #ace;
-  box-shadow: 0 0 5px #666;
   color: #222;
   top: 0;
   width: 100%;
@@ -225,13 +224,14 @@ header {
 @media (max-width: 767px) {
   header {
     position: fixed;
+    border-bottom: 1px solid #999;
   }
   .site-title {
-    padding: 6px 0 6px 6px;
-    width: calc(100% - 6px - 48px); /* 左余白、メニューボタンを差し引く */
     max-width: 240px;
-    height: calc(60px - 6px - 6px);
-    line-height: 48px;
+    height: 59px;
+    line-height: 59px;
+    margin-left: 6px;
+    margin-right: 48px;
   }
   .site-title img {
     width: 100%;
@@ -268,7 +268,7 @@ header {
     background: inherit;
     color: #444;
     display: block;
-    height: 60px;
+    height: 59px;
     position: absolute;
     right: 0;
     text-decoration: none;
@@ -283,7 +283,7 @@ header {
   .toggle-menu > .fa-bars {
     display: block;
     font-size: 22px;
-    padding: 19px 0;
+    padding: 18px 0 19px;
     line-height: 1;
     margin-left: 0;
   }
